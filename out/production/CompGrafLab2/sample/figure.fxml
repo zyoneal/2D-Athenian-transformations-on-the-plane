@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.canvas.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="650.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controller">
+    <center>
+        <Pane fx:id="centerPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+            <Canvas fx:id="canvas" height="465.0" width="465.0" />
+        </Pane>
+    </center>
+    <bottom>
+        <HBox alignment="CENTER" prefHeight="69.0" prefWidth="606.0" BorderPane.alignment="CENTER">
+            <BorderPane.margin>
+                <Insets left="5.0" />
+            </BorderPane.margin>
+              <Button mnemonicParsing="false" onAction="#moveLeft" prefHeight="37.0" prefWidth="71.0" text="left">
+                  <font>
+                      <Font name="Symbol" size="18.0" />
+                  </font>
+              </Button>
+              <Button mnemonicParsing="false" onAction="#moveUp" prefHeight="26.0" prefWidth="44.0" text="up">
+                  <font>
+                      <Font name="Symbol" size="18.0" />
+                  </font>
+              </Button>
+              <Button mnemonicParsing="false" onAction="#moveRight" prefHeight="37.0" prefWidth="64.0" text="right">
+                  <font>
+                      <Font name="Symbol" size="18.0" />
+                  </font>
+              </Button>
+              <Button mnemonicParsing="false" onAction="#moveDown" prefHeight="37.0" prefWidth="75.0" text="down">
+                  <font>
+                      <Font name="Symbol" size="18.0" />
+                  </font>
+              </Button>
+            <Button mnemonicParsing="false" onAction="#zoomIn" prefHeight="37.0" prefWidth="43.0" text="+">
+                <font>
+                    <Font name="Symbol" size="18.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#zoomOut" prefHeight="37.0" prefWidth="41.0" text="-">
+                <font>
+                    <Font name="Symbol" size="18.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#rotateLeft" text="rotate left">
+                <font>
+                    <Font name="Symbol" size="18.0" />
+                </font>
+            </Button>
+            <Button mnemonicParsing="false" onAction="#rotateRight" text="rotate right">
+                <font>
+                    <Font name="Symbol" size="18.0" />
+                </font>
+            </Button>
+        </HBox>
+    </bottom>
+    <top>
+        <MenuBar BorderPane.alignment="CENTER">
+            <Menu fx:id="fileMenu" mnemonicParsing="false" text="Файл">
+                <MenuItem fx:id="closeMenu" mnemonicParsing="false" onAction="#close" text="Закрыть" />
+            </Menu>
+
+            <Menu fx:id="colorFigure" mnemonicParsing="false" text="Цвет фигуры">
+                <MenuItem fx:id="redFigure" mnemonicParsing="false" onAction="#onRed" text="Красный" />
+                <MenuItem fx:id="yellowFigure" mnemonicParsing="false" onAction="#onYellow" text="Желтый" />
+                <MenuItem fx:id="greenFigure" mnemonicParsing="false" onAction="#onGreen" text="Зеленый" />
+                <MenuItem fx:id="blueFigure" mnemonicParsing="false" onAction="#onBlue" text="Синий" />
+                <MenuItem fx:id="blackFigure" mnemonicParsing="false" onAction="#onBlack" text="Черный" />
+            </Menu>
+
+        </MenuBar>
+    </top>
+</BorderPane>
