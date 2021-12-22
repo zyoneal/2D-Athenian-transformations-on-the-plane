@@ -10,4 +10,4 @@ The program performs affine transformations on the plane. It has the ability to 
 - JavaFX!
 
 ### Result
-![]({{site.baseurl}}//compGraf2-3.jpg)
+![Иллюстрация к проекту](https://github.com/zyoneal/2D-Athenian-transformations-on-the-plane/blob/master/compGraf2-3.jpg)
